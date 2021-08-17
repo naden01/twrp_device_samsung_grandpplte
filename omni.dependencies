@@ -7,7 +7,7 @@
 	},
 	{
 		"remote":"github",
-		"repository":"android_kernel_samsung_grandppltedx",
+		"repository":"almondnguyen/android_kernel_samsung_grandppltedx",
 		"target_path":"kernel/samsung/grandpplte",
 		"revision":"twrp-6.0"
 	}
