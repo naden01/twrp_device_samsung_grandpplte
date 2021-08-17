@@ -1,0 +1,14 @@
+[
+	{
+		"remote":"github",
+		"repository":"TeamWin/external_magisk-prebuilt",
+		"target_path":"external/magisk-prebuilt",
+		"revision":"android-9.0"
+	},
+	{
+		"remote":"github",
+		"repository":"android_kernel_samsung_grandppltedx",
+		"target_path":"kernel/samsung/grandpplte",
+		"revision":"twrp-6.0"
+	}
+]

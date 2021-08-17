@@ -16,5 +16,6 @@
 # limitations under the License.
 #
 
+export LC_ALL=C
 add_lunch_combo omni_grandpplte-userdebug
 add_lunch_combo omni_grandpplte-eng
