@@ -1,14 +1,32 @@
 [
 	{
 		"remote":"github",
-		"repository":"TeamWin/external_magisk-prebuilt",
-		"target_path":"external/magisk-prebuilt",
-		"revision":"android-9.0"
+		"repository":"almondnguyen/android_kernel_samsung_grandppltedx",
+		"target_path":"kernel/samsung/grandpplte",
+		"revision":"twrp-6.0"
 	},
 	{
 		"remote":"github",
-		"repository":"android_kernel_samsung_grandppltedx",
-		"target_path":"kernel/samsung/grandpplte",
-		"revision":"twrp-6.0"
+		"repository":"LineageOS/android_external_bash",
+		"target_path":"external/bash",
+		"revision":"cm-13.0"
+	},
+	{
+		"remote":"github",
+		"repository":"LineageOS/android_external_nano",
+		"target_path":"external/nano",
+		"revision":"cm-13.0"
+	},
+	{
+		"remote":"github",
+		"repository":"LineageOS/android_external_libncurses",
+		"target_path":"external/libncurses",
+		"revision":"cm-13.0"
+	},
+	{
+		"remote":"github",
+		"repository":"LineageOS/android_external_openssh",
+		"target_path":"external/openssh",
+		"revision":"cm-13.0"
 	}
 ]

@@ -18,5 +18,10 @@
 
 LOCAL_PATH := device/samsung/grandpplte
 
-PRODUCT_PACKAGES += busybox
+PRODUCT_PACKAGES += \
+	busybox \
+	nano \
+	bash \
+	openssh \
+	libncurses
 

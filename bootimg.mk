@@ -2,8 +2,6 @@ MKBOOTIMG := device/samsung/grandpplte/mkbootimg
 
 FLASH_IMAGE_TARGET ?= $(PRODUCT_OUT)/recovery.tar
 
-COMPRESS_COMMAND := xz --format=lzma --lzma1=dict=16MiB -9
-
 $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(recovery_ramdisk) $(recovery_kernel) $(RECOVERYIMAGE_EXTRA_DEPS)
 	@echo "------- Making recovery image -------"
 	$(hide) $(MKBOOTIMG) \

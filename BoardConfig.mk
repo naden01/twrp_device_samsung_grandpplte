@@ -20,8 +20,10 @@ DEVICE_PATH := device/samsung/grandpplte
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
-LZMA_RAMDISK_TARGETS := recovery
-LZMA_COMPRESSION := -9
+
+# remove LZMA for PBRP
+#LZMA_RAMDISK_TARGETS := recovery
+#LZMA_COMPRESSION := -9
 
 # Architecture
 TARGET_ARCH := arm
@@ -143,7 +145,6 @@ TW_FORCE_USE_BUSYBOX := true
 TW_INCLUDE_RESETPROP := true
 
 #--pbrp
-PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DONT_MOUNT_SYSTEM_AS_ROOT := true
 PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
