@@ -19,4 +19,3 @@
 LOCAL_PATH := device/samsung/grandpplte
 
 PRODUCT_PACKAGES += busybox
-

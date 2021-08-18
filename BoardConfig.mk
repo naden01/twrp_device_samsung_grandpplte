@@ -71,10 +71,11 @@ BOARD_KERNEL_IMAGE_NAME := zImage
 
 TARGET_KERNEL_ARCH        := arm
 TARGET_KERNEL_HEADER_ARCH := arm
-TARGET_KERNEL_SOURCE      := kernel/samsung/grandpplte
-TARGET_KERNEL_CONFIG      := mt6737t-grandpplte_defconfig
+#TARGET_KERNEL_SOURCE      := kernel/samsung/grandpplte
+#TARGET_KERNEL_CONFIG      := mt6737t-grandpplte_defconfig
 
 BOARD_MKBOOTIMG_ARGS += \
+	--kernel $(TARGET_PREBUILT_KERNEL) \
 	--cmdline "$(BOARD_KERNEL_CMDLINE)" \
 	--board $(TARGET_BOOTLOADER_BOARD_NAME) \
 	--base $(BOARD_KERNEL_BASE) \
@@ -141,3 +142,4 @@ TW_EXTRA_LANGUAGES := true
 
 TW_FORCE_USE_BUSYBOX := true
 TW_INCLUDE_RESETPROP := true
+TW_MAX_BRIGHTNESS := 255

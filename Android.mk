@@ -16,8 +16,10 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
-
 ifeq ($(TARGET_DEVICE), grandpplte)
+
+LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
+ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
+
 endif
