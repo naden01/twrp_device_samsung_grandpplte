@@ -1,8 +1,2 @@
 [
-	{
-		"remote":"github",
-		"repository":"TeamWin/external_magisk-prebuilt",
-		"target_path":"external/magisk-prebuilt",
-		"revision":"android-9.0"
-	}
 ]
