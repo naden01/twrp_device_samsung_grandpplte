@@ -18,14 +18,11 @@
 
 ifeq ($(TARGET_DEVICE), grandpplte)
 
-LOCAL_PATH := $(call my-dir)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
-
 # hack for prebuilt kernel
 $(shell (mkdir -p $(OUT)/kernel))
 
-# hack for M/N build system
-$(shell (export LC_ALL=C))
+LOCAL_PATH := $(call my-dir)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 
 endif
