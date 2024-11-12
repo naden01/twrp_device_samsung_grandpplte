@@ -19,3 +19,5 @@
 LOCAL_PATH := device/samsung/grandpplte
 
 PRODUCT_PACKAGES += busybox
+
+PRODUCT_SHIPPING_API_LEVEL := 31
