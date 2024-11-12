@@ -18,5 +18,5 @@
 
 export LC_ALL=C
 
-add_lunch_combo omni_grandpplte-eng
+add_lunch_combo twrp_grandpplte-eng
 
