@@ -19,7 +19,7 @@
 ifeq ($(TARGET_DEVICE), grandpplte)
 
 # hack for prebuilt kernel
-$(shell (mkdir -p $(OUT)/kernel))
+$(shell (mkdir -p $(OUT_DIR)/kernel))
 
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
