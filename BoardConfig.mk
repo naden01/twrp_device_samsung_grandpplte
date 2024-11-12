@@ -139,3 +139,37 @@ TW_EXTRA_LANGUAGES := true
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 162
 TW_EXCLUDE_TZDATA := true
+
+#SHRP Prop
+
+# NOTE - Dont use '-' or blank spaces in flag values , otherwise it will create build errors or other bugs in recovery (Excluding SHRP_PATH,SHRP_REC). 
+# Path of your SHRP Tree
+SHRP_PATH := device/tecno/LH8n
+
+# Maintainer name *
+SHRP_MAINTAINER := naze
+
+# Device codename *
+SHRP_DEVICE_CODE := LH8n
+
+# SHRP Padding Flag (Only for rounded corner devices.) [Optional]
+# You have to change these values according to your device's roundness.
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+
+# put this 0 if device has no EDL mode *
+SHRP_EDL_MODE := 0
+
+# Put your device's paths from fstab *
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+
+# Use this flag only if your device is A/B *
+SHRP_AB := false
+
+# Check your device's recovery path, dont use blindly
+SHRP_REC := /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/recovery
+
+# Put 0 to disable flashlight
+SHRP_FLASH := 0
