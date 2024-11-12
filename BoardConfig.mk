@@ -22,7 +22,6 @@ DEVICE_PATH := device/samsung/grandpplte
 ALLOW_MISSING_DEPENDENCIES := true
 LZMA_RAMDISK_TARGETS := recovery
 LZMA_COMPRESSION := -9
-PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Architecture
 TARGET_ARCH := arm
