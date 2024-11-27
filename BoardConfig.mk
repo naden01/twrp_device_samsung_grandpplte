@@ -127,11 +127,6 @@ DEVICE_RESOLUTION := 540x960
 DEVICE_SCREEN_WIDTH := 540
 DEVICE_SCREEN_HEIGHT := 960
 
-TW_INTERNAL_STORAGE_PATH := "/data/media"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
-TW_EXTERNAL_STORAGE_PATH := "/external_sd"
-TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
-
 TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 
@@ -139,3 +134,47 @@ TW_EXTRA_LANGUAGES := true
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 162
 TW_EXCLUDE_TZDATA := true
+
+# Version
+TW_DEVICE_VERSION := naze | garde
+
+#SHRP Prop
+
+# NOTE - Dont use '-' or blank spaces in flag values , otherwise it will create build errors or other bugs in recovery (Excluding SHRP_PATH,SHRP_REC). 
+# Path of your SHRP Tree
+SHRP_PATH := device/samsung/grandpplte
+
+# Maintainer name *
+SHRP_MAINTAINER := naze
+
+# Device codename *
+SHRP_DEVICE_CODE := grandpplte
+
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section] *
+SHRP_REC_TYPE := normal
+
+# Recovery Type (It can be A/B or A_only) [Only for About Section] *
+SHRP_DEVICE_TYPE := A/B
+
+# For Notch devices [Optional]
+SHRP_NOTCH := true
+
+# put this 0 if device has no EDL mode *
+SHRP_EDL_MODE := 0
+
+# Put your device's paths from fstab *
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+
+# Use this flag only if your device is A/B *
+SHRP_AB := false
+
+# Check your device's recovery path, dont use blindly
+SHRP_REC := /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/recovery
+
+# Put 0 to disable flashlight
+SHRP_FLASH := 0
+
+# Default (if not set) will use /system if SHRP_EXPRESS true otherwise will use legacy method of patching
+SHRP_EXPRESS_USE_DATA := true
